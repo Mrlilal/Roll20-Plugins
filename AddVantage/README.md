@@ -2,6 +2,8 @@
 
 Add advantage and disadvantage icons next to any saving throw or skill check of your choosing.  
 
+![](side-by-side-small.png)
+
 ## Setting Up AddVantage
 
 For each saving throw and skill check, there is a variable. You can choose which icon you'd like by changing the string of that variable.  
