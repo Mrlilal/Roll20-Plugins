@@ -5,6 +5,8 @@
 // @author       Mrlilal & Colenk
 // @version      1.2.2
 // @license      GPL-3.0-or-later
+// @updateURL    https://github.com/Mrlilal/Roll20-Plugins/raw/dev/AddVantage/AddVantage.user.js
+// @downloadURL  https://github.com/Mrlilal/Roll20-Plugins/raw/dev/AddVantage/AddVantage.user.js
 // @supportURL   https://github.com/Mrlilal/Roll20-Plugins/AddVantage/
 // @require      https://raw.githubusercontent.com/Mrlilal/Roll20-Plugins/dev/AddVantage/AddVantageBackground.js
 
@@ -16,6 +18,7 @@
 // NOTE: In order for the icons/images to inject, the character sheet must be open.
 // NOTE: If you close out of the embed character sheet, you must refresh the page to inject them again.
 // NOTE: If you close out of the pop-out character sheet, you can re-open it again and it will auto inject.
+// NOTE: Before updating this script, please keep in mind which settings you have changed.
 
 // NOTE: This was built for the D&D 5th Edition character sheet version 4.21 on Roll20. It is untested on any other sheet.
 // NOTE: This should work on both embed and pop-out character sheets.
