@@ -18,16 +18,16 @@ var injectionInterval = 10000; // The amount of time you wait between each injec
 
 // Which icon do you want to show?
 // Examples:
-// var intelligenceSavingThrow = 'advantage'; // Shows the "advantage" icon next to the "Intelligence" saving thow
-// var stealthCheck = 'disadvantage'; // Shows the "disadvantage" icon next to "Stealth" check
-// var religionCheck = 'none'; // Doesn't show any image next to "Religion" check
+// var savingThrowIntelligence = 'advantage'; // Shows the "advantage" icon next to the "Intelligence" saving thow
+// var skillCheckStealth = 'disadvantage'; // Shows the "disadvantage" icon next to "Stealth" check
+// var skillCheckReligion = 'none'; // Doesn't show any image next to "Religion" check
 // Saving Throws
-var savingThrowStrength = 'disadvantage';
-var savingThrowDexterity = 'disadvantage';
-var savingThrowConstitution = 'disadvantage';
-var savingThrowIntelligence = 'advantage';
-var savingThrowWisdom = 'advantage';
-var savingThrowCharisma = 'advantage';
+var savingThrowStrength = 'none';
+var savingThrowDexterity = 'none';
+var savingThrowConstitution = 'none';
+var savingThrowIntelligence = 'none';
+var savingThrowWisdom = 'none';
+var savingThrowCharisma = 'none';
 
 // Skill Checks
 // var skillCheckAcrobatics = 'none';
