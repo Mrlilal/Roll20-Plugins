@@ -13,6 +13,10 @@
 // @run-at       document-idle
 // ==/UserScript==
 
+// NOTE: In order for the icons/images to inject, the character sheet must be open.
+// NOTE: If you close out of the embed character sheet, you must refresh the page to inject them again.
+// NOTE: If you close out of the pop-out character sheet, you can re-open it again and it will auto inject.
+
 // NOTE: This was built for the D&D 5th Edition character sheet version 4.21 on Roll20. It is untested on any other sheet.
 // NOTE: This should work on both embed and pop-out character sheets.
 // NOTE: If you're using this on Tampermonkey, the required background javascript may not update properly. Please check if there are any updates manually.
