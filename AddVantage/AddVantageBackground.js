@@ -1,3 +1,4 @@
+// Version 1.2.1
 // Start of the injenction function
 var attemptInjection = (rollType, rollName, setting) => {
     // Check if there are already been icons injected
@@ -123,7 +124,7 @@ function addVantageSaveCharisma() {
 
 
 // Start all functions.
-export function startLoading() {
+function startLoading() {
     console.log('%cAddVantage: Code initialized, attempting injection.', 'color: #32CD32;');
 
     addVantageSaveStrength();
