@@ -91,7 +91,7 @@ If you notice any bugs or would like a certain feature to be implemented to this
 
 If you do not want to create a ticket or have any questions reguarding this script, feel free to message me.
 
-[GitHub: Mrlilal](https://github.com/Mrlilal) || Discord: Mrliall#3758 || [Twitter: @Mrlilal](https://twitter.com/mrlilal)
+[GitHub: Mrlilal](https://github.com/Mrlilal) || Discord: Mrlilal#3758 || [Twitter: @Mrlilal](https://twitter.com/mrlilal)
 
 ## Discalaimers
 
