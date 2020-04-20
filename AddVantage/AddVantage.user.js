@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AddVantage
 // @namespace    http://github.com/Mrlilal
-// @description  This adds advantage and disadvantage icons next to your saves and skills.
+// @description  Add advantage and disadvantage icons next to any saving throw or skill check of your choosing.
 // @author       Mrlilal & Colenk
 // @version      1.2.2
 // @license      GPL-3.0-or-later
@@ -64,10 +64,10 @@ var skillCheckStealth = 'none';
 var skillCheckSurvival = 'none';
 
 // Images/icons
-var imageAdvantage = 'https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/advantage-icon.svg' // It is recommended to use a transparent image.
-var imageDisadvantage = 'https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/disadvantage-icon.svg' // It is recommended to use a transparent image.
-var imageAdvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;' // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
-var imageDisadvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;' // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
+var imageAdvantage = 'https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/advantage-icon.svg'; // It is recommended to use a transparent image.
+var imageDisadvantage = 'https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/disadvantage-icon.svg'; // It is recommended to use a transparent image.
+var imageAdvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;'; // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
+var imageDisadvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;'; // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
 // === /Settings ===
 
 startLoading();
