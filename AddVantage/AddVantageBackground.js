@@ -123,7 +123,7 @@ function addVantageSaveCharisma() {
 
 
 // Start all functions.
-function startLoading() {
+export function startLoading() {
     console.log('%cAddVantage: Code initialized, attempting injection.', 'color: #32CD32;');
 
     addVantageSaveStrength();
