@@ -5,8 +5,8 @@
 // @author       Mrlilal & Colenk
 // @version      1.2.0_2020.04.19.1
 // @license      GPL-3.0-or-later
-// @supportURL   https://github.com/Mrlilal/Roll20-Plugins/
-// @require      https://github.com/Mrlilal/Roll20-Plugins/blob/dev/AddVantageBackground.js
+// @supportURL   https://github.com/Mrlilal/Roll20-Plugins/AddVantage/
+// @require      https://github.com/Mrlilal/Roll20-Plugins/AddVantage/raw/dev/AddVantageBackground.js
 
 // @match        https://app.roll20.net/editor*
 
