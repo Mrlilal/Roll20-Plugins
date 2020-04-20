@@ -56,4 +56,4 @@ var imageAdvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;' // R
 var imageDisadvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;' // Recommended as a 12x12px image with 5 pixels of padding on the left
 // === /Settings ===
 
-window.onload = startLoading();
+startLoading();
