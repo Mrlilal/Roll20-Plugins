@@ -8,7 +8,7 @@
 // @updateURL    https://github.com/Mrlilal/Roll20-Plugins/raw/addvantage-dev/AddVantage/AddVantage.user.js
 // @downloadURL  https://github.com/Mrlilal/Roll20-Plugins/raw/addvantage-dev/AddVantage/AddVantage.user.js
 // @supportURL   https://github.com/Mrlilal/Roll20-Plugins/AddVantage/
-// @require      https://raw.githubusercontent.com/Mrlilal/Roll20-Plugins/dev/AddVantage/AddVantageBackground.js
+// @require      https://raw.githubusercontent.com/Mrlilal/Roll20-Plugins/addvantage-dev/AddVantage/AddVantageBackground.js
 
 // @match        https://app.roll20.net/editor*
 
