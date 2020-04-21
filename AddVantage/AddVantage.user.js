@@ -5,8 +5,8 @@
 // @author       Mrlilal & Colenk
 // @version      1.2.2
 // @license      GPL-3.0-or-later
-// @updateURL    https://github.com/Mrlilal/Roll20-Plugins/raw/dev/AddVantage/AddVantage.user.js
-// @downloadURL  https://github.com/Mrlilal/Roll20-Plugins/raw/dev/AddVantage/AddVantage.user.js
+// @updateURL    https://github.com/Mrlilal/Roll20-Plugins/raw/addvantage-dev/AddVantage/AddVantage.user.js
+// @downloadURL  https://github.com/Mrlilal/Roll20-Plugins/raw/addvantage-dev/AddVantage/AddVantage.user.js
 // @supportURL   https://github.com/Mrlilal/Roll20-Plugins/AddVantage/
 // @require      https://raw.githubusercontent.com/Mrlilal/Roll20-Plugins/dev/AddVantage/AddVantageBackground.js
 
