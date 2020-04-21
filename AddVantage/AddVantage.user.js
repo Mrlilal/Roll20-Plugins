@@ -64,10 +64,10 @@ var skillCheckStealth = 'none';
 var skillCheckSurvival = 'none';
 
 // Images/icons
-var imageAdvantage = 'https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/advantage-icon.svg' // It is recommended to use a transparent image.
-var imageDisadvantage = 'https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/disadvantage-icon.svg' // It is recommended to use a transparent image.
-var imageAdvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;' // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
-var imageDisadvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;' // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
+var imageAdvantage = 'https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/advantage-icon.svg'; // It is recommended to use a transparent image.
+var imageDisadvantage = 'https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/disadvantage-icon.svg'; // It is recommended to use a transparent image.
+var imageAdvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;'; // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
+var imageDisadvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;'; // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
 // === /Settings ===
 
 startLoading();
