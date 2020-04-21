@@ -1,0 +1,1 @@
+Attempt to fix the dragging issue with items.
