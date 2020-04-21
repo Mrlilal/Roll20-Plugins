@@ -2,6 +2,14 @@
 
 This applies bug fixes to RedReign's "Roll20 Dark" plugin, which can be found [here](https://openuserjs.org/scripts/RedReign/Roll20_Dark).  
 
+## Chat "Small Scrollbar" Fix:
+
+![](chat-scrollbar-side-by-side.png)
+
+## Chat "Skill Background" Fix:
+
+![](chat-skill-background-side-by-side.png)
+
 ## Setting Up Roll20 Dark Fixes
 
 For each fix, there is a variable that you can choose to enable or disable the fix.  
