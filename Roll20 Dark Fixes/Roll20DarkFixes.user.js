@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Roll20 Dark Fixes
 // @namespace    http://github.com/Mrlilal
-// @description  This fixes some of the bugs with Roll20 Dark by RedReign.
+// @description  This fixes some of the bugs with "Roll20 Dark" by RedReign.
 // @author       Mrlilal & Colenk
-// @version      1.0.0
+// @version      1.1.0
 // @license      GPL-3.0-or-later
 // @updateURL    https://github.com/Mrlilal/Roll20-Plugins/raw/roll20-dark-fixes-dev/Roll20%20Dark%20Fixes/Roll20DarkFixes.user.js
 // @downloadURL  https://github.com/Mrlilal/Roll20-Plugins/raw/roll20-dark-fixes-dev/Roll20%20Dark%20Fixes/Roll20DarkFixes.user.js
