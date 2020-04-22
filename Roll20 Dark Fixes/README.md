@@ -10,6 +10,10 @@ This applies bug fixes to RedReign's "Roll20 Dark" plugin, which can be found [h
 
 ![](chat-skill-background-side-by-side.png)
 
+## Chat "Sheet Damage" Fix:
+
+![](chat-sheet-damage-side-by-side.png)
+
 ## Setting Up Roll20 Dark Fixes
 
 For each fix, there is a variable that you can choose to enable or disable the fix.  
