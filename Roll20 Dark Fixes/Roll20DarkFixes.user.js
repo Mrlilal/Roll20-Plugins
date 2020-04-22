@@ -29,6 +29,7 @@ var applicationInterval = 10; // The amount of time you wait inbetween each atte
 // var fixChatSkillBackground = 'disabled'; // Enables the fix for the background to the skill check in chat.
 var fixChatSmallScrollbar = 'enabled'; // Fixes the small scrollbar that appears when there isn't enough text to make the chat box bigger.
 var fixChatSkillBackground = 'enabled'; // Fixes the white background to the skill checks and made them match the saving throw background.
+var fixChatSheetDamage = 'enabled'; // Makes the sheet damage (for things like temp HP) match the rest of the numbers instead of black.
 // === /Settings ===
 
 startFixes();

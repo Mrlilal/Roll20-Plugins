@@ -71,6 +71,17 @@ function roll20DarkFixChatSkillBackground() {
     attemptApplication(setting, settingName, settingType, fixCSS);
 };
 
+// Function for fixes the bug from Roll20 Dark.
+function roll20DarkFixChatSheetDamage() {
+    let setting = fixChatSheetDamage;
+    let settingType = 'fix-chat-sheet-damage';
+    let settingName = 'Fix Chat: Sheet Damage';
+    let fixCSS = '#textchat .sheet-damage {color: hsl(0,0%,90%) !important;}';
+
+    // Start the injection while passing the variables.
+    attemptApplication(setting, settingName, settingType, fixCSS);
+};
+
 // Start all functions.
 function startFixes() {
     // Log that the code actually loaded.
@@ -78,4 +89,5 @@ function startFixes() {
 
     roll20DarkFixChatSmallScrollbar();
     roll20DarkFixChatSkillBackground();
+    roll20DarkFixChatSheetDamage();
 };
