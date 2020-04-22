@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Roll20 Dark Fixes
 // @namespace    http://github.com/Mrlilal
-// @description  This fixes some of the bugs with Roll20 Dark by RedReign.
+// @description  This fixes some of the bugs with "Roll20 Dark" by RedReign.
 // @author       Mrlilal & Colenk
-// @version      1.0.0
+// @version      1.1.0
 // @license      GPL-3.0-or-later
 // @updateURL    https://github.com/Mrlilal/Roll20-Plugins/raw/master/Roll20%20Dark%20Fixes/Roll20DarkFixes.user.js
 // @downloadURL  https://github.com/Mrlilal/Roll20-Plugins/raw/master/Roll20%20Dark%20Fixes/Roll20DarkFixes.user.js
@@ -29,6 +29,7 @@ var applicationInterval = 10; // The amount of time you wait inbetween each atte
 // var fixChatSkillBackground = 'disabled'; // Enables the fix for the background to the skill check in chat.
 var fixChatSmallScrollbar = 'enabled'; // Fixes the small scrollbar that appears when there isn't enough text to make the chat box bigger.
 var fixChatSkillBackground = 'enabled'; // Fixes the white background to the skill checks and made them match the saving throw background.
+var fixChatSheetDamage = 'enabled'; // Makes the sheet damage (for things like temp HP) match the rest of the numbers instead of black.
 // === /Settings ===
 
 startFixes();
