@@ -21,3 +21,7 @@ Applies bug fixes to RedReign's "Roll20 Dark" plugin, which can be found [here](
 ### Fixes the "Skill Background" in Chat
 
 ![](Roll20%20Dark%20Fixes/chat-skill-background-side-by-side.png)
+
+### Fixes the "Sheet Damage" in Chat
+
+![](Roll20%20Dark%20Fixes/chat-sheet-damage-side-by-side.png)
