@@ -1,1 +1,2 @@
 Attempt to fix the dragging issue with items.
+    Update: Most likely won't be able to fix this easily. It appears to be an issue on Roll20's end. The issue only happens on the pop-out character sheet, even without any other plugins or modifications.
