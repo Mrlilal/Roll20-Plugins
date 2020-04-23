@@ -7,7 +7,7 @@
 // @license      GPL-3.0-or-later
 // @updateURL    https://github.com/Mrlilal/Roll20-Plugins/raw/roll20-dark-fixes-dev/Roll20%20Dark%20Fixes/Roll20DarkFixes.user.js
 // @downloadURL  https://github.com/Mrlilal/Roll20-Plugins/raw/roll20-dark-fixes-dev/Roll20%20Dark%20Fixes/Roll20DarkFixes.user.js
-// @supportURL   https://github.com/Mrlilal/Roll20-Plugins/AddVantage/
+// @supportURL   https://github.com/Mrlilal/Roll20-Plugins/tree/master/Roll20%20Dark%20Fixes
 // @require      https://raw.githubusercontent.com/Mrlilal/Roll20-Plugins/roll20-dark-fixes-dev/Roll20%20Dark%20Fixes/Roll20DarkFixesBackground.js
 
 // @match        https://app.roll20.net/editor*
