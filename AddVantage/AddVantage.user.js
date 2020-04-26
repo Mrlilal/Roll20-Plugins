@@ -36,38 +36,40 @@ var injectionInterval = 10000; // The amount of time you wait inbetween each inj
 // var skillCheckStealth = 'disadvantage'; // Shows the "disadvantage" icon next to "Stealth" check
 // var skillCheckReligion = 'none'; // Doesn't show any image next to "Religion" check
 // Saving Throws
-var savingThrowStrength = 'none';
-var savingThrowDexterity = 'none';
-var savingThrowConstitution = 'none';
-var savingThrowIntelligence = 'none';
-var savingThrowWisdom = 'none';
-var savingThrowCharisma = 'none';
+var savingThrowStrength = "none";
+var savingThrowDexterity = "none";
+var savingThrowConstitution = "none";
+var savingThrowIntelligence = "none";
+var savingThrowWisdom = "none";
+var savingThrowCharisma = "none";
 
 // Skill Checks
-var skillCheckAcrobatics = 'none';
-var skillCheckAnimalHandling = 'none'; // Because of how long the name is, any added icons may not look as intended.
-var skillCheckArcana = 'none';
-var skillCheckAthletics = 'none';
-var skillCheckDeception = 'none';
-var skillCheckHistory = 'none';
-var skillCheckInsight = 'none';
-var skillCheckIntimidation = 'none';
-var skillCheckInvestigation = 'none';
-var skillCheckMedicine = 'none';
-var skillCheckNature = 'none';
-var skillCheckPerception = 'none';
-var skillCheckPerformance = 'none';
-var skillCheckPersuasion = 'none';
-var skillCheckReligion = 'none';
-var skillCheckSleightOfHand = 'none'; // Because of how long the name is, any added icons may not look as intended.
-var skillCheckStealth = 'none';
-var skillCheckSurvival = 'none';
+var skillCheckAcrobatics = "none";
+var skillCheckAnimalHandling = "none"; // Because of how long the name is, any added icons may not look as intended.
+var skillCheckArcana = "none";
+var skillCheckAthletics = "none";
+var skillCheckDeception = "none";
+var skillCheckHistory = "none";
+var skillCheckInsight = "none";
+var skillCheckIntimidation = "none";
+var skillCheckInvestigation = "none";
+var skillCheckMedicine = "none";
+var skillCheckNature = "none";
+var skillCheckPerception = "none";
+var skillCheckPerformance = "none";
+var skillCheckPersuasion = "none";
+var skillCheckReligion = "none";
+var skillCheckSleightOfHand = "none"; // Because of how long the name is, any added icons may not look as intended.
+var skillCheckStealth = "none";
+var skillCheckSurvival = "none";
 
 // Images/icons
-var imageAdvantage = 'https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/advantage-icon.svg'; // It is recommended to use a transparent image.
-var imageDisadvantage = 'https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/disadvantage-icon.svg'; // It is recommended to use a transparent image.
-var imageAdvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;'; // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
-var imageDisadvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;'; // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
+var imageAdvantage =
+    "https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/advantage-icon.svg"; // It is recommended to use a transparent image.
+var imageDisadvantage =
+    "https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/disadvantage-icon.svg"; // It is recommended to use a transparent image.
+var imageAdvantageStyling = "height: 12px; width: 12px; padding-left: 5px;"; // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
+var imageDisadvantageStyling = "height: 12px; width: 12px; padding-left: 5px;"; // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
 // === /Settings ===
 
 startLoading();

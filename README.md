@@ -1,10 +1,10 @@
 # Roll20-Plugins
 
-These are plugins that are made to add features or fix bugs.  
+These are plugins that are made to add features or fix bugs.
 
 ## [AddVantage](https://github.com/Mrlilal/Roll20-Plugins/tree/master/AddVantage)
 
-Add advantage and disadvantage icons next to any saving throw or skill check of your choosing.  
+Add advantage and disadvantage icons next to any saving throw or skill check of your choosing.
 
 ### Adding the icons.
 
