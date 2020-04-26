@@ -1,4 +1,4 @@
-// Version 2.0.4 Development
+// Version 2.0.5 Development
 
 function addVantage(type, roll, option, name) {
     if (type === 'save') {
@@ -28,7 +28,6 @@ let intelligence = new Options('Intelligence', 'save');
 let wisdom = new Options('Wisdom', 'save');
 let charisma = new Options('Charisma', 'save');
 
-debugger;
 // Skills
 let acrobatics = new Options('Acrobatics', 'skill');
 let animalhandling = new Options('Animal Handling', 'skill');
@@ -131,7 +130,8 @@ function startAddVantage() {
         stealth,
         survival
     );
-    settings.forEach((element) => {
-        addVantage(element.type, element.roll, element.option, element.name);
+    debugger;
+    settings.forEach((object) => {
+        addVantage(object.type, object.roll, object.option, object.name);
     });
 }
