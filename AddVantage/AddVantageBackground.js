@@ -1,9 +1,9 @@
-// Version 2.0.8 Development
+// Version 2.0.9 Development
 
 function addVantage(settings) {
-    const rollType;
-    const rollName;
     const setting = settings.option;
+    let rollType;
+    let rollName;
 
     if (settings.type === 'save') {
         rollType = `roll_${settings.roll}_save`;
@@ -12,6 +12,8 @@ function addVantage(settings) {
         rollType = `roll_${settings.roll}`;
         rollName = `${settings.name} Skill Check`;
     } else {
+        rollType = null;
+        rollName = null;
         console.log('%cType was not found.', 'color: red');
     }
 
@@ -135,5 +137,5 @@ function startAddVantage() {
         stealth,
         survival
     );
-    settings.forEach(addVantage)
+    settings.forEach(addVantage);
 }
