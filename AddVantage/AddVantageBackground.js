@@ -1,15 +1,19 @@
-// Version 2.0.6 Development
+// Version 2.0.7 Development
 
-function addVantage(type, roll, option, name) {
+function addVantage(settings) {
     const rollType;
+    const rollName;
+    const setting = settings.option;
+
     if (type === 'save') {
-        const rollType = `roll_${roll}_save`;
-        const rollName = `${name} Saving Throw`;
+        rollType = `roll_${settings.roll}_save`;
+        rollName = `${settings.name} Saving Throw`;
     } else if (type === 'skill') {
-        const rollType = `roll_${roll}`;
-        const rollName = `${name} Skill Check`;
+        rollType = `roll_${settings.roll}`;
+        rollName = `${settings.name} Skill Check`;
+    } else {
+        console.log('%cType was not found.', 'color: red');
     }
-    const setting = option;
 
     attemptInjection(rollType, rollName, setting);
 }
@@ -69,7 +73,7 @@ const attemptInjection = (rollType, rollName, setting) => {
         add_img_id.value = `AddVantage_${rollType}`; // Add a value to the now-created ID.
 
         // Start checking for the settings
-        if (setting == 'advantage') {
+        if (setting === 'advantage') {
             add_img_src.value = imageAdvantage; // Add the value of the image source.
             add_img_style.value = imageAdvantageStyling; // Add the value of the styling of the image.
             add_img_tag.setAttributeNode(add_img_src); // Add the image source ('SRC') to the image tag ('IMG').
@@ -79,7 +83,7 @@ const attemptInjection = (rollType, rollName, setting) => {
             document.getElementsByName(rollType)[0].appendChild(add_img_tag); // Create the whole image tag for the button.
 
             console.log(`%cAddVantage: The advantage icon for the ${rollName} was successfully added.`, 'color: #32CD32;'); // Log that the icon was added.
-        } else if (setting == 'disadvantage') {
+        } else if (setting === 'disadvantage') {
             add_img_src.value = imageDisadvantage; // The image that is added (to the 'SRC' attribute).
             add_img_style.value = imageDisadvantageStyling; // The styling that is added (to the 'STYLE' attribute).
             add_img_tag.setAttributeNode(add_img_src); // Add the image source ('SRC') to the image tag ('IMG').
@@ -89,7 +93,7 @@ const attemptInjection = (rollType, rollName, setting) => {
             document.getElementsByName(rollType)[0].appendChild(add_img_tag); // Create the whole image tag for the button.
 
             console.log(`%cAddVantage: The disadvantage icon for the ${rollName} was successfully added.`, 'color: #32CD32;'); // Log in the console that the disadvantage icon for Intelligence was added.
-        } else if (setting == 'none') {
+        } else if (setting === 'none') {
             console.log(`%cAddVantage: Setting for ${rollName} is "none." Continuing to the next setting.`, 'color: #32CD32;'); // Log in the console that the setting is off for adding an image.
         } else {
             console.log('%c---------------------------------------------', 'color: red;');
@@ -131,8 +135,5 @@ function startAddVantage() {
         stealth,
         survival
     );
-    debugger;
-    settings.forEach((object) => {
-        addVantage(object.type, object.roll, object.option, object.name);
-    });
+    settings.forEach(addVantage)
 }
