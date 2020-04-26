@@ -1,4 +1,4 @@
-// Version 2.0.1 Development
+// Version 2.0.2 Development
 
 function addVantage(type, roll, option, name) {
     if (type === 'save') {
@@ -21,34 +21,34 @@ function Options(name, type, option) {
 }
 
 // Saves
-let strength = Options('Strength', 'save');
-let dexterity = Options('Dexterity', 'save');
-let constitution = Options('Construction', 'save');
-let intelligence = Options('Intelligence', 'save');
-let wisdom = Options('Wisdom', 'save');
-let charisma = Options('Charisma', 'save');
+let strength = new Options('Strength', 'save');
+let dexterity = new Options('Dexterity', 'save');
+let constitution = new Options('Construction', 'save');
+let intelligence = new Options('Intelligence', 'save');
+let wisdom = new Options('Wisdom', 'save');
+let charisma = new Options('Charisma', 'save');
 
 // Skills
-let acrobatics = Options('Acrobatics', 'skill');
-var animalhandling = Options('Animal Handling', 'skill');
+let acrobatics = new Options('Acrobatics', 'skill');
+let animalhandling = new Options('Animal Handling', 'skill');
 animalhandling.roll = 'roll_animal_handling';
-let arcana = Options('Arcana', 'skill');
-let athletics = Options('Athletics', 'skill');
-let deception = Options('Deception', 'skill');
-let history = Options('History', 'skill');
-let insight = Options('Insight', 'skill');
-let intimidation = Options('Intimidation', 'skill');
-let investigation = Options('Investigation', 'skill');
-let medicine = Options('Medicine', 'skill');
-let nature = Options('Nature', 'skill');
-let perception = Options('Perception', 'skill');
-let performance = Options('Performance', 'skill');
-let persuasion = Options('Persuasion', 'skill');
-let religion = Options('Religion', 'skill');
-let sleightofhand = Options('Sleight of Hand', 'skill');
+let arcana = new Options('Arcana', 'skill');
+let athletics = new Options('Athletics', 'skill');
+let deception = new Options('Deception', 'skill');
+let history = new Options('History', 'skill');
+let insight = new Options('Insight', 'skill');
+let intimidation = new Options('Intimidation', 'skill');
+let investigation = new Options('Investigation', 'skill');
+let medicine = new Options('Medicine', 'skill');
+let nature = new Options('Nature', 'skill');
+let perception = new Options('Perception', 'skill');
+let performance = new Options('Performance', 'skill');
+let persuasion = new Options('Persuasion', 'skill');
+let religion = new Options('Religion', 'skill');
+let sleightofhand = new Options('Sleight of Hand', 'skill');
 sleightofhand.roll = 'roll_sleight_of_hand';
-let stealth = Options('Stealth', 'skill');
-let survival = Options('Survival', 'skill');
+let stealth = new Options('Stealth', 'skill');
+let survival = new Options('Survival', 'skill');
 
 const attemptInjection = (rollType, rollName, setting) => {
     // If the character sheet is not open or found, search again.
