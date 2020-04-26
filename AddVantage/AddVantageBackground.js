@@ -1,6 +1,7 @@
-// Version 2.0.5 Development
+// Version 2.0.6 Development
 
 function addVantage(type, roll, option, name) {
+    const rollType;
     if (type === 'save') {
         const rollType = `roll_${roll}_save`;
         const rollName = `${name} Saving Throw`;
