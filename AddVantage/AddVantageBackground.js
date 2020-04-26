@@ -1,4 +1,4 @@
-// Version 2.0.0 Development
+// Version 2.0.1 Development
 
 function addVantage(type, roll, option, name) {
     if (type === 'save') {
@@ -30,7 +30,7 @@ let charisma = Options('Charisma', 'save');
 
 // Skills
 let acrobatics = Options('Acrobatics', 'skill');
-let animalhandling = Options('Animal Handling', 'skill');
+var animalhandling = Options('Animal Handling', 'skill');
 animalhandling.roll = 'roll_animal_handling';
 let arcana = Options('Arcana', 'skill');
 let athletics = Options('Athletics', 'skill');
