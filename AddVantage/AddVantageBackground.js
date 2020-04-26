@@ -12,9 +12,8 @@ function addVantage(settings) {
         rollType = `roll_${settings.roll}`;
         rollName = `${settings.name} Skill Check`;
     } else {
-        rollType = null;
-        rollName = null;
-        console.log('%cType was not found.', 'color: red');
+        console.log(`%c There was an error setting the type, not running an injection for ${settings.name}`, 'color: red');
+        return;
     }
 
     attemptInjection(rollType, rollName, setting);
@@ -65,12 +64,7 @@ const attemptInjection = (rollType, rollName, setting) => {
         if (!document.getElementsByName(rollType)[0]) {
             setTimeout(attemptInjection, injectionInterval, rollType, rollName, setting);
 
-            console.log(
-                `%cAddVantage: Elements not found. Waiting ${
-                    injectionInterval / 1000
-                } seconds to attempt injecting again. Please open your character sheet.`,
-                "color: yellow;"
-            );
+            console.log(`%cAddVantage: Elements not found. Waiting ${injectionInterval / 1000} seconds to attempt injecting again. Please open your character sheet.`, 'color: yellow;');
 
             return;
         }
@@ -116,7 +110,10 @@ const attemptInjection = (rollType, rollName, setting) => {
 
 // TODO: Attempt an injection on click, instead of only running at start.
 function startAddVantage() {
-    console.log(`%cAddVantage: Code initialized with AddVantage Foreground Version ${versionAddVantageBackground} and AddVantage Background Version ${versionAddVantageBackground}. Attempting injection.`, 'color: #32CD32;');
+    console.log(
+        `%cAddVantage: Code initialized with AddVantage Foreground Version ${versionAddVantageBackground} and AddVantage Background Version ${versionAddVantageBackground}. Attempting injection.`,
+        'color: #32CD32;'
+    );
 
     let settings = [];
     settings.push(
