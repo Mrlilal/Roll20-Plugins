@@ -1,0 +1,8 @@
+Attempt to post a message in chat when initialized, then when finished. 
+Say which icons are where?
+
+Example:
+Advantage Icons:
+    Here, here, here
+Disadvantage Icons:
+    Here, here, here

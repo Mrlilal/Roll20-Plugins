@@ -3,7 +3,7 @@
 // @namespace    http://github.com/Mrlilal
 // @description  Add advantage and disadvantage icons next to any saving throw or skill check of your choosing.
 // @author       Mrlilal & Colenk
-// @version      1.2.2
+// @version      2.0.3
 // @license      GPL-3.0-or-later
 // @updateURL    https://github.com/Mrlilal/Roll20-Plugins/raw/master/AddVantage/AddVantage.user.js
 // @downloadURL  https://github.com/Mrlilal/Roll20-Plugins/raw/master/AddVantage/AddVantage.user.js
@@ -14,6 +14,8 @@
 
 // @run-at       document-idle
 // ==/UserScript==
+
+const versionAddVantageForeground = '2.0.3';
 
 // NOTE: In order for the icons/images to inject, the character sheet must be open.
 // NOTE: If you close out of the embed character sheet, you must refresh the page to inject them again.
@@ -28,48 +30,46 @@
 // NOTE: Github: Mrlilal || Discord: Mrlilal#3758 || Twitter: @Mrlilal
 
 // === Settings ===
-var injectionInterval = 10000; // The amount of time you wait inbetween each injection attempt. Recommended to be at least 5000 milliseconds.
+const injectionInterval = 10000; // The amount of time you wait inbetween each injection attempt. Recommended to be at least 5000 milliseconds.
 
 // Which icon do you want to show?
 // Examples:
-// var savingThrowIntelligence = 'advantage'; // Shows the "advantage" icon next to the "Intelligence" saving thow
-// var skillCheckStealth = 'disadvantage'; // Shows the "disadvantage" icon next to "Stealth" check
-// var skillCheckReligion = 'none'; // Doesn't show any image next to "Religion" check
+// intelligence.option = 'advantage'; // Shows the "advantage" icon next to the "Intelligence" saving thow
+// stealth.option = 'disadvantage'; // Shows the "disadvantage" icon next to "Stealth" check
+// religion.option = 'none'; // Doesn't show any image next to "Religion" check
 // Saving Throws
-var savingThrowStrength = "none";
-var savingThrowDexterity = "none";
-var savingThrowConstitution = "none";
-var savingThrowIntelligence = "none";
-var savingThrowWisdom = "none";
-var savingThrowCharisma = "none";
+strength.option = 'none';
+dexterity.option = 'none';
+constitution.option = 'none';
+intelligence.option = 'none';
+wisdom.option = 'none';
+charisma.option = 'none';
 
-// Skill Checks
-var skillCheckAcrobatics = "none";
-var skillCheckAnimalHandling = "none"; // Because of how long the name is, any added icons may not look as intended.
-var skillCheckArcana = "none";
-var skillCheckAthletics = "none";
-var skillCheckDeception = "none";
-var skillCheckHistory = "none";
-var skillCheckInsight = "none";
-var skillCheckIntimidation = "none";
-var skillCheckInvestigation = "none";
-var skillCheckMedicine = "none";
-var skillCheckNature = "none";
-var skillCheckPerception = "none";
-var skillCheckPerformance = "none";
-var skillCheckPersuasion = "none";
-var skillCheckReligion = "none";
-var skillCheckSleightOfHand = "none"; // Because of how long the name is, any added icons may not look as intended.
-var skillCheckStealth = "none";
-var skillCheckSurvival = "none";
+// Skill checks
+acrobatics.option = 'none';
+animalhandling.option = 'none'; // Because of how long the name is, any added icons may not look as intended.
+arcana.option = 'none';
+athletics.option = 'none';
+deception.option = 'none';
+history.option = 'none';
+insight.option = 'none';
+intimidation.option = 'none';
+investigation.option = 'none';
+medicine.option = 'none';
+nature.option = 'none';
+perception.option = 'none';
+performance.option = 'none';
+persuasion.option = 'none';
+religion.option = 'none';
+sleightofhand.option = 'none'; // Because of how long the name is, any added icons may not look as intended.
+stealth.option = 'none';
+survival.option = 'none';
 
 // Images/icons
-var imageAdvantage =
-    "https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/advantage-icon.svg"; // It is recommended to use a transparent image.
-var imageDisadvantage =
-    "https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/disadvantage-icon.svg"; // It is recommended to use a transparent image.
-var imageAdvantageStyling = "height: 12px; width: 12px; padding-left: 5px;"; // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
-var imageDisadvantageStyling = "height: 12px; width: 12px; padding-left: 5px;"; // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
+const imageAdvantage = 'https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/advantage-icon.svg'; // It is recommended to use a transparent image.
+const imageDisadvantage = 'https://www.dndbeyond.com/Content/Skins/Waterdeep/images/character-sheet/disadvantage-icon.svg'; // It is recommended to use a transparent image.
+const imageAdvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;'; // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
+const imageDisadvantageStyling = 'height: 12px; width: 12px; padding-left: 5px;'; // It is recommended as a 12x12px image with 5 pixels of padding on the left of the image.
 // === /Settings ===
 
-startLoading();
+startAddVantage();
