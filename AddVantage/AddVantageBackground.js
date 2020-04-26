@@ -1,4 +1,4 @@
-// Version 2.0.3 Development
+// Version 2.0.4 Development
 
 function addVantage(type, roll, option, name) {
     if (type === 'save') {
@@ -28,6 +28,7 @@ let intelligence = new Options('Intelligence', 'save');
 let wisdom = new Options('Wisdom', 'save');
 let charisma = new Options('Charisma', 'save');
 
+debugger;
 // Skills
 let acrobatics = new Options('Acrobatics', 'skill');
 let animalhandling = new Options('Animal Handling', 'skill');
@@ -49,7 +50,6 @@ let sleightofhand = new Options('Sleight of Hand', 'skill');
 sleightofhand.roll = 'roll_sleight_of_hand';
 let stealth = new Options('Stealth', 'skill');
 let survival = new Options('Survival', 'skill');
-debugger;
 const attemptInjection = (rollType, rollName, setting) => {
     // If the character sheet is not open or found, search again.
     if (!document.getElementById(`AddVantage_${rollType}`)) {
