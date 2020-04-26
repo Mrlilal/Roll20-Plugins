@@ -3,7 +3,7 @@
 // @namespace    http://github.com/Mrlilal
 // @description  This adds advantage and disadvantage icons next to your saves and skills.
 // @author       Mrlilal & Colenk
-// @version      2.0.2
+// @version      2.0.3 Development
 // @license      GPL-3.0-or-later
 // @updateURL    https://github.com/Mrlilal/Roll20-Plugins/raw/addvantage-dev/AddVantage/AddVantage.user.js
 // @downloadURL  https://github.com/Mrlilal/Roll20-Plugins/raw/addvantage-dev/AddVantage/AddVantage.user.js
@@ -14,6 +14,8 @@
 
 // @run-at       document-idle
 // ==/UserScript==
+
+const versionAddVantageForeground = '2.0.3 Development';
 
 // NOTE: In order for the icons/images to inject, the character sheet must be open.
 // NOTE: If you close out of the embed character sheet, you must refresh the page to inject them again.

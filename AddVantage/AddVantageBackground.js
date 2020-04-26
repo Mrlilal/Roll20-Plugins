@@ -1,4 +1,4 @@
-// Version 2.0.10 Development
+const versionAddVantageBackground = '2.0.11 Development';
 
 function addVantage(settings) {
     const setting = settings.option;
@@ -61,6 +61,7 @@ const attemptInjection = (rollType, rollName, setting) => {
     // If the character sheet is not open or found, search again.
     if (!document.getElementById(`AddVantage_${rollType}`)) {
         // If elements are not found, wait and try to find them again.
+        // TODO: Find a way to loop, but not indefinitely. Basically looking for an interator
         if (!document.getElementsByName(rollType)[0]) {
             setTimeout(attemptInjection, injectionInterval, rollType, rollName, setting);
 
@@ -104,12 +105,16 @@ const attemptInjection = (rollType, rollName, setting) => {
             console.log('%c---------------------------------------------', 'color: red;');
         }
     } else {
-        console.log(`%cAddVantage: The icons are already injected. Skipping attempted injection.`, 'color: #32CD32;'); // Log that the icons already exist.
+        console.log(`%cAddVantage: The icons are already injected. Skipping attempted injection.`, 'color: #32CD32;');
     }
 };
 
+// TODO: Attempt an injection on click, instead of only running at start.
 function startAddVantage() {
-    console.log('%cAddVantage: Code initialized, attempting injection.', 'color: #32CD32;'); // Log that the code actually loaded.
+    console.log(
+        `%cAddVantage: Code initialized with AddVantage Foreground Version ${versionAddVantageBackground} and AddVantage Background Version ${versionAddVantageBackground}. Attempting injection.`,
+        'color: #32CD32;'
+    );
 
     let settings = [];
     settings.push(
