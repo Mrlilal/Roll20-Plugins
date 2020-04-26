@@ -111,8 +111,7 @@ const attemptInjection = (rollType, rollName, setting) => {
 
 // TODO: Attempt an injection on click, instead of only running at start.
 function startAddVantage() {
-    console.log(
-        `%cAddVantage: Code initialized with AddVantage Foreground Version ${versionAddVantageBackground} and AddVantage Background Version ${versionAddVantageBackground}. Attempting injection.`, 'color: #32CD32;');
+    console.log(`%cAddVantage: Code initialized with AddVantage Foreground Version ${versionAddVantageBackground} and AddVantage Background Version ${versionAddVantageBackground}. Attempting injection.`, 'color: #32CD32;');
 
     let settings = [];
     settings.push(
