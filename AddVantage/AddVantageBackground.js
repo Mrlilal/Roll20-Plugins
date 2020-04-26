@@ -1,14 +1,14 @@
-// Version 2.0.7 Development
+// Version 2.0.8 Development
 
 function addVantage(settings) {
     const rollType;
     const rollName;
     const setting = settings.option;
 
-    if (type === 'save') {
+    if (settings.type === 'save') {
         rollType = `roll_${settings.roll}_save`;
         rollName = `${settings.name} Saving Throw`;
-    } else if (type === 'skill') {
+    } else if (settings.type === 'skill') {
         rollType = `roll_${settings.roll}`;
         rollName = `${settings.name} Skill Check`;
     } else {
