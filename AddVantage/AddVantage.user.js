@@ -3,7 +3,7 @@
 // @namespace    http://github.com/Mrlilal
 // @description  This adds advantage and disadvantage icons next to your saves and skills.
 // @author       Mrlilal & Colenk
-// @version      2.0.1
+// @version      2.0.2
 // @license      GPL-3.0-or-later
 // @updateURL    https://github.com/Mrlilal/Roll20-Plugins/raw/addvantage-dev/AddVantage/AddVantage.user.js
 // @downloadURL  https://github.com/Mrlilal/Roll20-Plugins/raw/addvantage-dev/AddVantage/AddVantage.user.js

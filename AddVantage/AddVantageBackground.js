@@ -1,4 +1,4 @@
-// Version 2.0.9 Development
+// Version 2.0.10 Development
 
 function addVantage(settings) {
     const setting = settings.option;
@@ -30,7 +30,7 @@ function Options(name, type, option) {
 // Saves
 let strength = new Options('Strength', 'save');
 let dexterity = new Options('Dexterity', 'save');
-let constitution = new Options('Construction', 'save');
+let constitution = new Options('Constitution', 'save');
 let intelligence = new Options('Intelligence', 'save');
 let wisdom = new Options('Wisdom', 'save');
 let charisma = new Options('Charisma', 'save');
@@ -38,7 +38,7 @@ let charisma = new Options('Charisma', 'save');
 // Skills
 let acrobatics = new Options('Acrobatics', 'skill');
 let animalhandling = new Options('Animal Handling', 'skill');
-animalhandling.roll = 'roll_animal_handling';
+animalhandling.roll = 'animal_handling';
 let arcana = new Options('Arcana', 'skill');
 let athletics = new Options('Athletics', 'skill');
 let deception = new Options('Deception', 'skill');
@@ -53,9 +53,10 @@ let performance = new Options('Performance', 'skill');
 let persuasion = new Options('Persuasion', 'skill');
 let religion = new Options('Religion', 'skill');
 let sleightofhand = new Options('Sleight of Hand', 'skill');
-sleightofhand.roll = 'roll_sleight_of_hand';
+sleightofhand.roll = 'sleight_of_hand';
 let stealth = new Options('Stealth', 'skill');
 let survival = new Options('Survival', 'skill');
+
 const attemptInjection = (rollType, rollName, setting) => {
     // If the character sheet is not open or found, search again.
     if (!document.getElementById(`AddVantage_${rollType}`)) {
@@ -96,7 +97,7 @@ const attemptInjection = (rollType, rollName, setting) => {
 
             console.log(`%cAddVantage: The disadvantage icon for the ${rollName} was successfully added.`, 'color: #32CD32;'); // Log in the console that the disadvantage icon for Intelligence was added.
         } else if (setting === 'none') {
-            console.log(`%cAddVantage: Setting for ${rollName} is "none." Continuing to the next setting.`, 'color: #32CD32;'); // Log in the console that the setting is off for adding an image.
+            console.log(`%cAddVantage: Setting for ${rollName} is "none". Continuing to the next setting.`, 'color: #32CD32;'); // Log in the console that the setting is off for adding an image.
         } else {
             console.log('%c---------------------------------------------', 'color: red;');
             console.log(`%cAddVantage: Setting for ${rollName} is not set properly. Please ensure that all settings are configured properly.`, 'color: red;'); // Log that some settings are not set up properly.
@@ -107,7 +108,6 @@ const attemptInjection = (rollType, rollName, setting) => {
     }
 };
 
-// Start all functions.
 function startAddVantage() {
     console.log('%cAddVantage: Code initialized, attempting injection.', 'color: #32CD32;'); // Log that the code actually loaded.
 
