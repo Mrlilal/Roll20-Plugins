@@ -1,6 +1,6 @@
 # Roll20-Plugins
 
-These are plugins that are made to add features or fix bugs.
+These are plugins that are made to add features or fix bugs within roll20.
 
 ## [AddVantage](https://github.com/Mrlilal/Roll20-Plugins/tree/master/AddVantage)
 
