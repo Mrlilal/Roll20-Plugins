@@ -33,4 +33,4 @@ const fixChatSheetDamage = 'enabled'; // Makes the sheet damage (for things like
 const fixChatBeyond20Rolls = 'enabled'; // Changes the style for the button made by Beyond20
 // === /Settings ===
 
-startFixes();
+startRoll20DarkFixes();
