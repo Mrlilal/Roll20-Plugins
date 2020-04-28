@@ -64,7 +64,7 @@ function roll20DarkFixChatSkillBackground() {
     let setting = fixChatSkillBackground;
     let settingType = "fix-chat-skill-background";
     let settingName = "Fix Chat: Skill Background";
-    let fixCSS = 'div.sheet-rolltemplate-skill div.sheet-container {background-image: url("https://i.imgur.com/FjwWl2K.png") !important;background-color: transparent !important;}';
+    let fixCSS = 'div.sheet-rolltemplate-skill div.sheet-container {background-image: url("https://i.imgur.com/FjwWl2K.png") !important; background-color: transparent !important;}';
 
     // Start the injection while passing the variables.
     attemptApplication(setting, settingName, settingType, fixCSS);
@@ -85,7 +85,7 @@ function roll20DarkFixChatBeyond20Rolls() {
     let setting = fixChatBeyond20Rolls;
     let settingType = 'fix-chat-beyond-20-rolls';
     let settingName = 'Fix Chat: Beyond 20 Rolls'
-    let fixCSS = '.textchatcontainer a[href^="!"], .textchatcontainer a[href^="~"] {background-color: transparent; color: black; padding: 0px;}';
+    let fixCSS = '.textchatcontainer a[href^="!"], .textchatcontainer a[href^="~"] {background-color: transparent !important; color: black; padding: 0px !important;}';
 
     attemptApplication(setting, settingName, settingType, fixCSS);
 }
