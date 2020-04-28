@@ -1,6 +1,6 @@
-// Version 1.0.0
+// Version 1.1.0
 // Start of the injenction function
-var attemptApplication = (setting, settingName, settingType, fixCSS) => {
+const attemptApplication = (setting, settingName, settingType, fixCSS) => {
     // Check if there are already been icons injected
     if (!document.getElementById(`Roll20DarkFix_${settingType}`)) {
         // If the character sheet is not open or found, search again
@@ -81,6 +81,15 @@ function roll20DarkFixChatSheetDamage() {
     // Start the injection while passing the variables.
     attemptApplication(setting, settingName, settingType, fixCSS);
 };
+
+function roll20DarkFixChatBeyond20Rolls() {
+    let setting = fixChatBeyond20Rolls;
+    let settingType = 'fix-chat-beyond-20-rolls';
+    let settingName = 'Fix Chat: Beyond 20 Rolls'
+    let fixCSS = '.textchatcontainer a[href^="!"], .textchatcontainer a[href^="~"] {background-color: transparent; color: black; padding: 0px;}';
+
+    attemptApplication(setting, settingName, settingType, fixCSS);
+}
 
 // Start all functions.
 function startFixes() {
