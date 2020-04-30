@@ -85,7 +85,7 @@ function roll20DarkFixChatBeyond20Rolls() {
     let setting = fixChatBeyond20Rolls;
     let settingType = 'fix-chat-beyond-20-rolls';
     let settingName = 'Fix Chat: Beyond 20 Rolls';
-    let fixCSS = '.textchatcontainer a[href^="!"], .textchatcontainer a[href^="~"] {background-color: transparent !important; color: black; padding: 0px !important;}';
+    let fixCSS = '.textchatcontainer a[href^="!"], .textchatcontainer a[href^="~"] {background-color: transparent !important; color: black; padding: 0px !important; border: none !important;}';
 
     attemptApplication(setting, settingName, settingType, fixCSS);
 }
